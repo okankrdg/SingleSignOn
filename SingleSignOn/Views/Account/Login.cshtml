@@ -1,0 +1,68 @@
+﻿@model LoginViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<div class="d-flex justify-content-center align-items-md-center vh-100">
+    <div class="col-md-4 col-sm-8 col-xs-12">
+        <div class="card border-secondary">
+            <div class="card-header pt-4 pb-4 text-center bg-light">
+                <h4>okankaradag.com</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Login" method="post" class="needs-validation" novalidate>
+                    <input asp-for="ReturnUrl" type="hidden" />
+                            <span asp-validation-for=UserName class="text-danger"></span>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" asp-for=UserName required>
+                            <span class="input-group-text" id="basic-addon2"><i class="bi bi-person-fill"></i></span>
+                            <div class="invalid-feedback">
+                                Please enter a correct e-mail address
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                            <input type="password" asp-for=Password class="form-control" id="exampleInputPassword1" required>
+                            <span class="input-group-text" id="basic-addon2"><i class="bi bi-key-fill"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+@section Scripts{
+<script>
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+</script>
+}

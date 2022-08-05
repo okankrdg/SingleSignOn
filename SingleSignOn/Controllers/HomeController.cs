@@ -15,6 +15,7 @@ namespace SingleSignOn.Controllers
 
         public IActionResult Index()
         {
+            var user = User.Identity;
             return View();
         }
 
@@ -23,6 +24,7 @@ namespace SingleSignOn.Controllers
             return View();
         }
 
+        [Route("/Error/Error")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

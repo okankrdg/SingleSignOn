@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSignOn", "SingleSignOn\SingleSignOn.csproj", "{80A20C4D-9E78-4443-A670-A37D1C583568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleSignOn", "SingleSignOn\SingleSignOn.csproj", "{80A20C4D-9E78-4443-A670-A37D1C583568}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookApi", "BookApi\BookApi.csproj", "{5C150446-FE3E-41CB-9785-1E85731557FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApp", "MvcApp\MvcApp.csproj", "{7AA67D74-49EB-4B94-B2DE-EE89020438FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{80A20C4D-9E78-4443-A670-A37D1C583568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A20C4D-9E78-4443-A670-A37D1C583568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80A20C4D-9E78-4443-A670-A37D1C583568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C150446-FE3E-41CB-9785-1E85731557FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C150446-FE3E-41CB-9785-1E85731557FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C150446-FE3E-41CB-9785-1E85731557FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C150446-FE3E-41CB-9785-1E85731557FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA67D74-49EB-4B94-B2DE-EE89020438FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA67D74-49EB-4B94-B2DE-EE89020438FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA67D74-49EB-4B94-B2DE-EE89020438FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA67D74-49EB-4B94-B2DE-EE89020438FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

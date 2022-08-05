@@ -1,0 +1,15 @@
+﻿body {
+    background-color: whitesmoke;
+}
+.form-label {
+    margin-bottom: .5rem;
+    font-size: .875rem;
+    color: #1e2022;
+}
+.form-control {
+    border-radius: .25rem;
+    color: #838c96
+}
+.card {
+    box-shadow: 0rem 0.5rem 0.3rem rgb(144 165 185 / 35%);
+}
